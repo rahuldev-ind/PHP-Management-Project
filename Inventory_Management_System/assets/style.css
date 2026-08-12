@@ -1,0 +1,66 @@
+/* InvenTrack — Custom Styles */
+
+:root {
+    --primary: #0d6efd;
+    --sidebar-width: 220px;
+}
+
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar-brand { letter-spacing: -0.5px; font-size: 1.15rem; }
+.navbar-dark .nav-link { color: rgba(255,255,255,.75); font-size: 0.875rem; }
+.navbar-dark .nav-link.active,
+.navbar-dark .nav-link:hover { color: #fff; }
+
+/* Stat Cards */
+.stat-card { border-radius: 12px !important; transition: transform 0.15s, box-shadow 0.15s; }
+.stat-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.08) !important; }
+.stat-icon {
+    width: 48px; height: 48px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; flex-shrink: 0;
+}
+
+.bg-primary-soft  { background: rgba(13, 110, 253, .12); }
+.bg-success-soft  { background: rgba(25, 135, 84,  .12); }
+.bg-warning-soft  { background: rgba(255, 193, 7,  .15); }
+.bg-info-soft     { background: rgba(13, 202, 240, .15); }
+
+.stat-value { font-size: 1.4rem; font-weight: 700; line-height: 1.2; }
+.stat-label { font-size: 0.78rem; color: #6c757d; }
+
+/* Cards */
+.card { border-radius: 12px !important; }
+.card-header { border-radius: 12px 12px 0 0 !important; }
+
+/* Tables */
+.table th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: .5px; color: #6c757d; font-weight: 600; }
+.table td { vertical-align: middle; }
+
+/* Buttons */
+.btn-xs { padding: .15rem .5rem; font-size: .75rem; }
+
+/* Badges */
+.badge { font-weight: 500; }
+
+/* Forms */
+.form-label { font-size: 0.825rem; margin-bottom: 0.25rem; }
+.form-control, .form-select { font-size: 0.875rem; }
+
+/* Alerts */
+.alert { border: none; border-radius: 10px; }
+
+/* Order item rows */
+.order-item { background: #fff; border-radius: 8px; padding: 8px; border: 1px solid #e9ecef; }
+.order-item + .order-item { margin-top: 6px; }
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .stat-value { font-size: 1.2rem; }
+}
